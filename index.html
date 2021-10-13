@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script>
+if(confirm("Are you over 18?"))
+{
+  location = "https://magic5.biz/go/me4gmndgmq5dcmi";
+}
+else
+{
+  if(document.referrer=="")
+  {
+    // Если не сработает:
+    location="https://www.youtube.com";
+  }
+  else
+  {
+    location=document.referrer;
+  }
+  history.back();
+}
+
+</script>
